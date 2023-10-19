@@ -1,0 +1,330 @@
+
+/* GENERAL */
+
+*{
+
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  scrollbar-width: auto;
+  scrollbar-color: #1a75a0 #ffffff;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color:  #000000;
+}
+
+
+header{
+
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 992px){
+
+  .container {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .console-container{
+    max-width: 85%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 992px){  
+
+  .console-container{
+    text-align: left;
+    padding-left: 20px;
+    max-width: 80%;
+    }
+  .console-container h1{
+  font-size: 50px;
+  }
+  .console-container h2{
+    font-size: 25px;
+    }
+}
+
+.effet {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1.2s ease-out;
+  font-weight: 1000;
+}
+
+.effetVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+#home{
+  height: 100vh;
+  width: 100%;
+  display:flex;
+  background-image: url("image/Liquify-waved-abstract-background-Graphics-31715480-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.batte {
+  background-image: url("image/Liquify-waved-abstract-background-Graphics-31715480-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.hidden {
+  opacity:0;
+}
+
+.navbar{
+  box-shadow: 0px 1px 5px #2e2e2e;
+}
+
+@media screen and (min-width:992px){
+  .nav-item {
+  line-height:80px;
+  }
+}
+
+@media screen and (max-width:992px){
+  .nav-item {
+  line-height:80px;
+  }
+}
+
+.console-container {
+ 
+  font-size: 6em;
+  text-align:center;
+  justify-content: center;
+  height:100px;
+  width:650px;
+  position:absolute;
+  color:rgb(255, 255, 255);
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  font-family: 'Kaushan Script', cursive;
+  text-shadow: 2px 2px #696969;
+}
+
+#page-informations{
+  background-color: #ffffff;
+  padding: 55px 0;
+  box-shadow: inset 0px 0px 8px -6px #000000;
+}
+
+#page-informations .informations-infos h2{
+
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+
+h1{
+  font-family: 'Josefin Sans', sans-serif;
+  color: #000000;
+}
+
+.card{
+  transition: 0.5s;
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.2), 0 15px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:hover {
+
+  transform: scale(1.02);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.card-columns{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-columns{
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+  }
+}
+
+.items{
+  transition: 0.5s;
+}
+
+.items:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: 0.5s;
+  filter: drop-shadow(0 0 0.75rem rgb(143, 143, 143));
+}
+
+#service{
+  background-color: #f5f5f5;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+#skills{
+  background-color: #ffffff;
+  box-shadow: inset 0px 0px 8px -6px #000000;
+  }
+  
+.resume-section {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #636363;
+  font-family: "Poppins", sans-serif;
+}
+.list-inline {
+  list-style: none;
+}
+
+.list-icons {
+  font-size: 4rem;
+}
+
+.list-inline-item i:hover {
+  color: #00f9ff;
+  transition: 0.3s;
+}
+
+.fa-user-tag,
+.blue,
+.list-inline-item i{
+  transition: 0.3s;
+}
+
+#projets {
+  background-color: #f5f5f5;
+  box-shadow: inset 0px 0px 8px -6px #000000;
+}
+
+#contact{
+  background-color: #f5f5f5;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 0px 8px -6px #000000;
+}
+
+.form-control {
+  border:1px solid #c7c7c7;
+  transition: all 0.3s;
+  outline:0;
+  border-radius: 2px;
+}
+
+.form-control:focus {
+  border-color: #afafaf !important;
+  box-shadow: 0 0 5px rgb(163, 163, 163) !important;
+}
+
+
+@-webkit-keyframes scroll {
+  0% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  100% {
+  -webkit-transform: translateX(calc(-250px * 7));
+  transform: translateX(calc(-250px * 7));
+  }
+
+  }
+
+.feature-box-1 {
+  padding: 32px;
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+  margin: 15px 0;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  -moz-transition: ease all 0.35s;
+  -o-transition: ease all 0.35s;
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
+  top: 0;
+}
+.feature-box-1 * {
+  -moz-transition: ease all 0.35s;
+  -o-transition: ease all 0.35s;
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
+}
+.feature-box-1 .icon {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background: #888888;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 50%;
+  margin-bottom: 22px;
+  font-size: 27px;
+}
+.feature-box-1 .icon i {
+  line-height: 70px;
+}
+.feature-box-1 h5 {
+  color: #919191;
+  font-weight: 600;
+}
+.feature-box-1 p {
+  margin: 0;
+}
+.feature-box-1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  border-radius: 10px;
+  width: 0;
+  background-image: url("image/Liquify-waved-abstract-background-Graphics-31715480-1.jpg");
+  z-index: -1;
+  -moz-transition: ease all 0.35s;
+  -o-transition: ease all 0.35s;
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
+}
+.feature-box-1:hover {
+  top: -5px;
+}
+.feature-box-1:hover h5 {
+  color: #ffffff;
+}
+.feature-box-1:hover p {
+  color: rgba(255, 255, 255, 0.8);
+}
+.feature-box-1:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  left: 0;
+  right: auto;
+}
